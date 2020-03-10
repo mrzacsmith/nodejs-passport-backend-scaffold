@@ -6,6 +6,7 @@
 
 - `mkdir < server-directory-name >`
 - `git init`
+- `npm i -g gitignore` //creates gitignore file globally or 
 - `npx gitignore node` //creates git.ignore for node
 - `npm init -y` //creates package.json
 
