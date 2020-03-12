@@ -5,7 +5,7 @@
 ### Create a directory for your server to live
 
 - `mkdir < server-directory-name >`
-- `git init`
+- `git init` //if download from a repo, use `git remote -v` to view the repo list
 - `npm i -g gitignore` //creates gitignore file globally or 
 - `npx gitignore node` //creates git.ignore for node
 - `npm init -y` //creates package.json
