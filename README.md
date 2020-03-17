@@ -70,6 +70,7 @@ exports.up = function(knex) {
         .string('username', 128)
         .notNullable()
         .unique();
+	.index();  //this creates index for username 
 
       users
         .string('password', 128)
