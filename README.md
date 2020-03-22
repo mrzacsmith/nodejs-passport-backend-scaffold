@@ -1,6 +1,4 @@
-# <p align="center">How to Build a Node.js Server Using an SQLite Database</p>
 
-## Creating a Git Repository & Adding Dependencies
 
 ### Create a directory for your server to live
 
