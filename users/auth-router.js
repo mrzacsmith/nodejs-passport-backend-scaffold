@@ -2,13 +2,18 @@ const router = require("express").Router();
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const secrets = require("../config/secrets.js");
-
+const passport = require('passport')
 const Users = require("./users-model.js");
 
-// for endpoints beginning with /api/auth
+// --------------- GitHub using passport ------------------
+  router.get('/github', passport.authenticate('github', {}))
+
+
+
+   // for endpoints beginning with /api/auth
 router.post("/register", validateUserContent, (req, res) => {
   let user = req.body;
-  const hash = bcrypt.hashSync(user.password, 10); // 2 ^ n
+        const hash = bcrypt.hashSync(user.password, 10); // 2 ^ n
   user.password = hash;
 
   Users.add(user)
